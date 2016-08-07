@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h3U-hW-NLp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Group View Controller-->
+        <scene sceneID="qvH-Eh-18E">
+            <objects>
+                <collectionViewController id="h3U-hW-NLp" customClass="GroupViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ugR-dI-b1B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X7L-CN-tIc">
+                            <size key="itemSize" width="200" height="160"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GroupCell" id="1dL-SB-FTP" customClass="GroupCell" customModule="DemoApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="200" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-4J-iSC">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sanjay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwz-QK-TuD">
+                                                    <rect key="frame" x="79" y="112" width="42" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mumbai Life,Mumbai Rain and Mumbai Girls" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXI-G7-vf9">
+                                                    <rect key="frame" x="8" y="137" width="184" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10years" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-XE-acU">
+                                                    <rect key="frame" x="50" y="8" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="8cm-0e-xa1"/>
+                                                        <constraint firstAttribute="width" constant="100" id="ls9-KP-xt5"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gwz-QK-TuD" firstAttribute="centerX" secondItem="iBR-XE-acU" secondAttribute="centerX" id="6zY-SM-soF"/>
+                                                <constraint firstAttribute="trailing" secondItem="NXI-G7-vf9" secondAttribute="trailing" constant="8" id="IS7-H0-Y51"/>
+                                                <constraint firstItem="iBR-XE-acU" firstAttribute="top" secondItem="iRG-4J-iSC" secondAttribute="top" constant="8" id="T7l-G6-hys"/>
+                                                <constraint firstItem="NXI-G7-vf9" firstAttribute="leading" secondItem="iRG-4J-iSC" secondAttribute="leading" constant="8" id="TNC-Pe-cty"/>
+                                                <constraint firstItem="iBR-XE-acU" firstAttribute="centerX" secondItem="iRG-4J-iSC" secondAttribute="centerX" id="Tbf-mu-adY"/>
+                                                <constraint firstItem="NXI-G7-vf9" firstAttribute="top" secondItem="gwz-QK-TuD" secondAttribute="bottom" constant="8.5" id="W5A-Eg-yNj"/>
+                                                <constraint firstItem="gwz-QK-TuD" firstAttribute="top" secondItem="iBR-XE-acU" secondAttribute="bottom" constant="4" id="kOe-Sr-iBH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iRG-4J-iSC" firstAttribute="leading" secondItem="1dL-SB-FTP" secondAttribute="leading" id="JSY-z0-mYI"/>
+                                    <constraint firstAttribute="bottom" secondItem="iRG-4J-iSC" secondAttribute="bottom" id="ZWP-E4-kkD"/>
+                                    <constraint firstAttribute="trailing" secondItem="iRG-4J-iSC" secondAttribute="trailing" id="vEO-gs-8lq"/>
+                                    <constraint firstItem="iRG-4J-iSC" firstAttribute="top" secondItem="1dL-SB-FTP" secondAttribute="top" id="vc7-Va-UPo"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="userImage" destination="iBR-XE-acU" id="zoD-FU-A1q"/>
+                                    <outlet property="userName" destination="gwz-QK-TuD" id="xLP-oA-gIb"/>
+                                    <outlet property="userSatatus" destination="NXI-G7-vf9" id="Jj7-c2-hyr"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="h3U-hW-NLp" id="cIS-OX-PLh"/>
+                            <outlet property="delegate" destination="h3U-hW-NLp" id="Fmm-oE-PnG"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wp8-00-bMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10years" width="392" height="523"/>
+    </resources>
+</document>

@@ -13,5 +13,4 @@ class GroupCell: UICollectionViewCell {
     @IBOutlet weak var userName:UILabel!
     @IBOutlet weak var userSatatus:UILabel!
     
-    
 }

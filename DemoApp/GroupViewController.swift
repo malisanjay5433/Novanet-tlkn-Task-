@@ -30,7 +30,6 @@ class GroupViewController: UICollectionViewController,UICollectionViewDelegateFl
         let layout = CollectionViewLayout()
         layout.minimumColumnSpacing = 16.0
         layout.minimumInteritemSpacing = 16.0
-        
         self.collectionView!.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
         self.collectionView!.alwaysBounceVertical = true
         self.collectionView!.collectionViewLayout = layout
